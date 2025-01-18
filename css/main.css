@@ -1224,7 +1224,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #bab15d;
+    background: #824da3;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2713,7 +2713,29 @@ header.header {
   }
 }
 body {
-  background: url("/images/background.png");
+  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5)), url("/images/background.png");
+/* 背景图片 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.main-inner > .sub-menu,
+.main-inner > .post-block,
+.main-inner > .tabs-comment,
+.main-inner > .comments,
+.main-inner > .pagination {
+  background: rgba(245,245,245,0.9);
+}
+.site-brand-container {
+  background: rgba(100,157,173,0.9);
+}
+.header {
+  opacity: 0.9;
+}
+.sidebar-inner {
+  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("/images/sidebar-background.png");
+/* 背景图片 */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
