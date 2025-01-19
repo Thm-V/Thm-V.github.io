@@ -1267,7 +1267,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff62e0;
+    background: #b0ff7c;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1618,7 +1618,6 @@ pre code {
   white-space: nowrap;
 }
 .footer {
-  color: #999;
   font-size: 0.875em;
   padding: 20px 0;
   transition: 0.2s ease-in-out;
@@ -1753,10 +1752,6 @@ pre code {
 .rtl.post-body ul,
 .rtl.post-body ol {
   direction: rtl;
-  font-family: UKIJ Ekran;
-}
-.rtl.post-title {
-  font-family: UKIJ Ekran;
 }
 .post-button {
   margin-top: 40px;
@@ -2805,4 +2800,12 @@ body {
 .site-state-item-name {
   font-size: 15px;
   color: #1e1e1e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yozai-Medium", sans-serif;
 }
