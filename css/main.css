@@ -6,8 +6,8 @@
   --selection-bg: #262a30;
   --selection-color: #eee;
   --blockquote-color: #666;
-  --link-color: #555;
-  --link-hover-color: #222;
+  --link-color: #1e1e1e;
+  --link-hover-color: #256250;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -1267,7 +1267,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #78ff67;
+    background: #4b83ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1890,7 +1890,6 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2075,7 +2074,6 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2755,6 +2753,10 @@ header.header {
     padding: 10px 12px;
   }
 }
+@font-face {
+  font-family: "Yozai-Medium";
+  src: url("/fonts/Yozai-Medium.ttf") format("truetype");
+}
 body {
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5)), url("/images/background.png");
 /* 背景图片 */
@@ -2762,6 +2764,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  font-family: "Yozai-Medium", sans-serif; /* 默认字体设置 */
 }
 .main-inner > .sub-menu,
 .main-inner > .post-block,
@@ -2776,25 +2779,30 @@ body {
 .header {
   opacity: 0.9;
 }
+.menu {
+  font-size: 20px;
+}
 .sidebar-inner {
-  position: relative;
-  background: url("/images/sidebar-background.png"); /* 背景图片 */
+  background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.3)), url("/images/sidebar-background.png");
+/* 背景图片 */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
-.sidebar-inner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255,255,255,0.3); /* 半透明背景 */
-  z-index: 1; /* 确保这个层级在背景图之上，但在文字内容之下 */
+.site-author-name {
+  font-size: 25px;
+  color: #1e1e1e;
 }
-.sidebar-inner > * {
-  position: relative;
-  z-index: 2; /* 确保文字内容在半透明背景之上 */
+.site-description {
+  font-size: 15px;
+  color: #0f0f0f;
+}
+.site-state {
+  font-size: 15px;
+  color: #0f0f0f;
+}
+.site-state-item-name {
+  font-size: 15px;
+  color: #1e1e1e;
 }
