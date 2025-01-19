@@ -1267,7 +1267,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff9555;
+    background: #78ff67;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2777,10 +2777,24 @@ body {
   opacity: 0.9;
 }
 .sidebar-inner {
-  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("/images/sidebar-background.png");
-/* 背景图片 */
+  position: relative;
+  background: url("/images/sidebar-background.png"); /* 背景图片 */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+.sidebar-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.3); /* 半透明背景 */
+  z-index: 1; /* 确保这个层级在背景图之上，但在文字内容之下 */
+}
+.sidebar-inner > * {
+  position: relative;
+  z-index: 2; /* 确保文字内容在半透明背景之上 */
 }
