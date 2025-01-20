@@ -2,7 +2,7 @@
   --body-bg-color: #eee;
   --content-bg-color: #fff;
   --card-bg-color: #f5f5f5;
-  --text-color: #555;
+  --text-color: #1e1e1e;
   --selection-bg: #262a30;
   --selection-color: #eee;
   --blockquote-color: #666;
@@ -1267,7 +1267,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #065dff;
+    background: #4fc4cc;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1333,7 +1333,7 @@ pre code {
   }
 }
 .sidebar-toggle:hover .toggle-line {
-  background: #fc6423;
+  background: #fff;
 }
 @media (any-hover: hover) {
   body:not(.sidebar-active) .sidebar-toggle:hover :first-child {
@@ -1388,17 +1388,17 @@ pre code {
   margin-left: 10px;
 }
 .sidebar-nav li:hover {
-  color: #fc6423;
+  color: #fff;
 }
 .sidebar-toc-active .sidebar-nav-toc,
 .sidebar-overview-active .sidebar-nav-overview {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #fff;
+  color: #fff;
   transition-delay: 0.2s;
 }
 .sidebar-toc-active .sidebar-nav-toc:hover,
 .sidebar-overview-active .sidebar-nav-overview:hover {
-  color: #fc6423;
+  color: #fff;
 }
 .sidebar-panel-container {
   align-items: start;
@@ -1487,6 +1487,7 @@ pre code {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
   --height: 0;
@@ -1503,14 +1504,19 @@ pre code {
   visibility: unset;
 }
 .post-toc .nav .active > a {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  color: #fff;
+  padding: 2px 10px;
+  background-color: rgba(100,157,173,0.9);
+  border-radius: 12px;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #fff;
+  padding: 2px 10px;
+  background-color: rgba(100,157,173,0.9);
+  border-radius: 12px;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #fff;
 }
 .site-author-image {
   border: 1px solid #eee;
@@ -1735,7 +1741,7 @@ pre code {
   }
 }
 .back-to-top:hover {
-  color: #fc6423;
+  color: #fff;
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
@@ -2179,17 +2185,17 @@ pre code {
 }
 .reward-container button {
   background: transparent;
-  color: #fc6423;
+  color: #fff;
   cursor: pointer;
   line-height: 2;
   padding: 0 15px;
-  border: 2px solid #fc6423;
+  border: 2px solid #fff;
   border-radius: 2px;
   outline: 0;
   vertical-align: text-top;
 }
 .reward-container button:hover {
-  background: #fc6423;
+  background: #fff;
   color: #fff;
 }
 .post-reward {
@@ -2580,14 +2586,14 @@ header.header {
 }
 .sub-menu .menu-item a:hover {
   background: transparent;
-  color: #fc6423;
+  color: #fff;
 }
 .sub-menu .menu-item-active {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #fff;
+  color: #fff;
 }
 .sub-menu .menu-item-active:hover {
-  border-bottom-color: #fc6423;
+  border-bottom-color: #fff;
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -2808,4 +2814,10 @@ h4,
 h5,
 h6 {
   font-family: "Yozai-Medium", sans-serif;
+}
+.post-toc {
+  font-size: 1em;
+}
+.sidebar-nav {
+  font-size: 1em;
 }
